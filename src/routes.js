@@ -9,6 +9,7 @@ import Products from './components/products.vue';
 import NotFound from './components/NotFound.vue';
 import ReviewCreate from './components/reviewCreate.vue';
 import SignUp from './components/signUp.vue';
+import Orders from './components/orders.vue';
 
 Vue.use(VueRouter);
 
@@ -17,6 +18,7 @@ const routes = [
 {path:'/account',component: Account},
 {path:'/signin',component: Login},
 {path:'/products',component: Products},
+{path: '/products', component: Orders},
 {path:'/products/:pk',component: ProductDetail,
 children:[
     {path:'/review',component: ReviewCreate},
